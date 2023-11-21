@@ -74,7 +74,7 @@ jobs:
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       env:
-        ECS_TASK_DEFINITION: ../aws/taskdef.json
+        ECS_TASK_DEFINITION: ./aws/taskdef.json
         CONTAINER_NAME: php-apache
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
