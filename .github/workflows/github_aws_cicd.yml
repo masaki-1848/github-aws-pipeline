@@ -50,8 +50,8 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         audience: sts.amazonaws.com
-        role-to-assume: arn:aws:iam::${{ secret.AWS_ACCOUNT_ID }}:role/githubActionsCicdExeRole
-        aws-region: ${{ secret.AWS_REGION }}
+        role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/githubActionsCicdExeRole
+        aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Login to Amazon ECR
       id: login-ecr
