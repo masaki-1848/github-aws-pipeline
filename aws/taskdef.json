@@ -1,5 +1,4 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:989959965747:task-definition/github-actions-cicd-fargate:3",
     "containerDefinitions": [
         {
             "name": "php-apache",
